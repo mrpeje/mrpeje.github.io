@@ -1,7 +1,7 @@
 {
   "entryAssembly": "GoJSBlazor",
   "resources": {
-    "hash": "sha256-BP1uyMVG57iD2xIcArOTtxXd3pKFRakRt2n6PHlDp5o=",
+    "hash": "sha256-sE3WHMSH9L4WnIaMLfe9/AqTCrTlq5VuUOYSAjcV8og=",
     "runtime": {
       "dotnet.6.0.33.nb9lyccs58.js": "sha256-jpvgnepM7KtOHm6oL5ZxQ3miAOQ0r6LAhIN4DWI3TcI=",
       "dotnet.timezones.blat": "sha256-P+/t9PCEv/9QsJggxMNw2wdb6fNvy1O6Es0UqrFfIPQ=",
@@ -15,8 +15,8 @@
       "Blazorise.dll": "sha256-ckDujqvC12Kk3AAHAPIwxriUyDtWkVoum8sKTosLkqY=",
       "Blazorise.Icons.FontAwesome.dll": "sha256-jCZv/N1eFiuBN2QYgVtEZ/Jlv3lRduWw0FYhRh3e9Fg=",
       "Blazorise.Licensing.dll": "sha256-zAGhyZNxC1knisPb+ecLCofiuyNDu3ZgoOu27xyznz0=",
-      "GoJSBlazor.dll": "sha256-gG1/CoYRemELQhT42hduR4Fv1fACDKc4yI8nd+k+rqI=",
-      "GoJsWrapper.dll": "sha256-YG7QrhALYU/p8N+XiRYkNIh+dmCR4UYsyVwAL0b5Jdo=",
+      "GoJSBlazor.dll": "sha256-yc7uTPTOGLR/9CoKRu7UoDnvFzaM+gLK6+vXUHIkQA0=",
+      "GoJsWrapper.dll": "sha256-g2aSPFRi1EghzHNmrsBTD7/e/XydE6wJ0orPuHvJu0w=",
       "Microsoft.AspNetCore.Components.dll": "sha256-H5nDlKy2xU0ZNJkZxqTl4gSW+Ls9W6HllLeOl+mwIME=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-wHL39fhytsebjaX1PaB/SvmShtMLGKvy+dRyvS2O+FA=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-uhwGzAQO6c3bEVzTl2Xj4YxfBcRW/CzmVeZ35y6zKOA=",

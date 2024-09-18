@@ -584,7 +584,7 @@ function subscribeAddedEvent(netRefrenece) {
     //    // so the GraphLinksModel needs to set these property names:
     //    // linkFromPortIdProperty and linkToPortIdProperty.
 //}
-const jsonDefault = {
+const jsonDefault1 = {
     "class": "go.GraphLinksModel",
     "linkKeyProperty": 'key',
     "copiesArrays": true,
@@ -597,39 +597,163 @@ const jsonDefault = {
        
     ]
 }
-    const jsonDefault1 = {
-        "class": "go.GraphLinksModel",
-        "linkKeyProperty": 'key',
-        "copiesArrays": true,
-        "copiesArrayObjects": true,
-        "linkFromPortIdProperty": "fromPort",
-        "linkToPortIdProperty": "toPort",
-        "nodeDataArray": [
-            {
-                "key": 1, "name": "Unit One", "loc": "101 204", "color": "#66d6d1",
-                "leftArray": [{ "portColor": "#fae3d7", "portId": "left0" }],          
-                "rightArray": [{ "portColor": "#eaeef8", "portId": "right0" }, { "portColor": "#fadfe5", "portId": "right1" }]
-            },
-            {
-                "key": 2, "name": "Unit Two", "loc": "320 152",
-                "leftArray": [{ "portColor": "#6cafdb", "portId": "left0" }, { "portColor": "#66d6d1", "portId": "left1" }, { "portColor": "#fae3d7", "portId": "left2" }],
-                "rightArray": []
-            },
-            {
-                "key": 3, "name": "Unit Three", "loc": "384 319",
-                "leftArray": [{ "portColor": "#66d6d1", "portId": "left0" }, { "portColor": "#fadfe5", "portId": "left1" }, { "portColor": "#6cafdb", "portId": "left2" }],
-                "rightArray": []
-            },
-            {
-                "key": 4, "name": "Unit Four", "loc": "138 351",
-                "leftArray": [{ "portColor": "#fae3d7", "portId": "left0" }],
-                "rightArray": [{ "portColor": "#6cafdb", "portId": "right0" }, { "portColor": "#66d6d1", "portId": "right1" }]
-            }
-        ],
-        "linkDataArray": [
-            { "from": 4, "to": 3, "fromPort": "right0", "toPort": "left0" },
-            { "from": 4, "to": 3, "fromPort": "right1", "toPort": "left2" },
-            { "from": 1, "to": 2, "fromPort": "right0", "toPort": "left1" },
-            { "from": 1, "to": 2, "fromPort": "right1", "toPort": "left2" }
-        ]
+const jsonDefault= {
+    "class": "GraphLinksModel",
+    "copiesArrays": true,
+    "copiesArrayObjects": true,
+    "linkKeyProperty": "key",
+    "linkFromPortIdProperty": "fromPort",
+    "linkToPortIdProperty": "toPort",
+    "nodeDataArray": [
+        {
+            "name": "One",
+            "category": "One",
+            "key": -1,
+            "leftArray": [
+                {
+                    "portId": "left0",
+                    "name": "left",
+                    "description": "portDescr",
+                    "portColor": "black"
+                }
+            ],
+            "rightArray": [
+                {
+                    "portId": "right0",
+                    "name": "right",
+                    "description": "portDescr2",
+                    "portColor": "red"
+                }
+            ],
+            "loc": "-90.984375 -152.1875",
+            "color": "#FF0000",
+            "description": "Block"
+        },
+        {
+            "name": "Two",
+            "category": "Two",
+            "key": -2,
+            "leftArray": [
+                {
+                    "portId": "left0",
+                    "name": "left",
+                    "description": "portDescr",
+                    "portColor": "black"
+                },
+                {
+                    "portId": "left1",
+                    "name": "Port2",
+                    "description": "blue port left2",
+                    "portColor": "blue"
+                }
+            ],
+            "rightArray": [
+                {
+                    "portId": "right0",
+                    "name": "right",
+                    "description": "portDescr2",
+                    "portColor": "red"
+                },
+                {
+                    "portId": "right1",
+                    "name": "Port1",
+                    "description": "red port right1",
+                    "portColor": "#F92C00"
+                }
+            ],
+            "loc": "81.015625 -136.1875",
+            "color": "#2196F3BF",
+            "description": "Block"
+        },
+        {
+            "name": "Three",
+            "category": "Three",
+            "key": -3,
+            "leftArray": [
+                {
+                    "portId": "left0",
+                    "name": "left",
+                    "description": "portDescr",
+                    "portColor": "black"
+                }
+            ],
+            "rightArray": [
+                {
+                    "portId": "right0",
+                    "name": "right",
+                    "description": "portDescr2",
+                    "portColor": "red"
+                }
+            ],
+            "loc": "-95.984375 -13.1875",
+            "color": "#FFEB3BF2",
+            "description": "Block"
+        },
+        {
+            "name": "Four",
+            "category": "Four",
+            "key": -4,
+            "leftArray": [
+                {
+                    "portId": "left0",
+                    "name": "left",
+                    "description": "portDescr",
+                    "portColor": "black"
+                }
+            ],
+            "rightArray": [
+                {
+                    "portId": "right0",
+                    "name": "right",
+                    "description": "portDescr2",
+                    "portColor": "red"
+                }
+            ],
+            "loc": "79.015625 -40.1875",
+            "color": "#4CAF50CC",
+            "description": "Block"
+        }
+    ],
+    "linkDataArray": [
+        {
+            "from": -1,
+            "to": -2,
+            "fromPort": "right0",
+            "toPort": "left0",
+            "key": -1,
+            "points": [-52.984375, -152.1875, -42.984375, -152.1875, -4.984375, -152.1875, -4.984375, -141.1875, 33.015625, -141.1875, 43.015625, -141.1875]
+        },
+        {
+            "from": -2,
+            "to": -4,
+            "fromPort": "right1",
+            "toPort": "right0",
+            "key": -2,
+            "points": [119.015625, -131.1875, 129.015625, -131.1875, 129.015625, -40.1875, 128.015625, -40.1875, 127.015625, -40.1875, 117.015625, -40.1875]
+        },
+        {
+            "from": -4,
+            "to": -3,
+            "fromPort": "left0",
+            "toPort": "right0",
+            "key": -3,
+            "points": [41.015625, -40.1875, 31.015625, -40.1875, -8.484375, -40.1875, -8.484375, -13.1875, -47.984375, -13.1875, -57.984375, -13.1875]
+        },
+        {
+            "from": -2,
+            "to": -4,
+            "fromPort": "left1",
+            "toPort": "left0",
+            "key": -4,
+            "points": [43.015625, -131.1875, 33.015625, -131.1875, 31.015625, -131.1875, 31.015625, -85.6875, 31.015625, -40.1875, 41.015625, -40.1875]
+        },
+        {
+            "from": -2,
+            "to": -3,
+            "fromPort": "right0",
+            "toPort": "left0",
+            "key": -5,
+            "points": [119.015625, -141.1875, 129.015625, -141.1875, 136.015625, -141.1875, 136.015625, 19.8125, -140, 19.8125, -140, -13.1875, -143.984375, -13.1875, -133.984375, -13.1875]
+        }
+    ]
 }
